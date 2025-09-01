@@ -1,0 +1,287 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  color: #f7f7f7;
+  background: #777677;
+  line-height: 1.6;
+}
+
+/* Banner promocional */
+.promo-bar {
+  background: #ac860a;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  padding: 8px 0;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #0c0c0c;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #000000;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #f8f8f8;
+  font-weight: 500;
+}
+
+.nav a:hover {
+  color: #d36b2f;
+}
+
+.icons a {
+  margin-left: 20px;
+  color: #fff;
+  display: inline-flex;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.icons a:hover {
+  color: #ac860a;
+  transform: scale(1.2);
+}
+
+/* Hero */
+.hero {
+  background: url('https://images.unsplash.com/photo-1587280501635-68a0e82cd5ff?fm=jpg&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8c3BvcnQlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww&ixlib=rb-4.1.0&q=60&w=3000') no-repeat center/cover;
+  color: #fff;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  padding: 0 60px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #d32f2f;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #b71c1c;
+}
+
+/* Coleções */
+.collections {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.collections h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.collections .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card,
+.product {
+  background: #0a0a0a;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.card img,
+.product img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.card:hover,
+.product:hover {
+  transform: translateY(-10px); 
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover img,
+.product:hover img {
+  transform: scale(1.05);
+}
+
+/* Banner */
+.banner {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.banner h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Produtos */
+.products {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.products h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.products .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.product img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.product span {
+  font-weight: bold;
+  color: #f36d14;
+}
+
+/* Rodapé */
+.footer {
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.footer-links {
+  margin-bottom: 20px
+}
+
+.footer-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* Formulário de Contato */
+.contact-form {
+  background: #111;
+  padding: 50px 40px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.contact-form h2 {
+  color: #fff;
+  font-size: 3rem;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 8px;
+  color: #f7f7f7;
+  font-weight: 500;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: none;
+  background: #111; 
+  color: #fff;
+  font-size: 1rem;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  background: #222; 
+  outline: none;
+  transform: scale(1.02);
+}
+
+/* Botões do formulário */
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.contact-form button {
+  flex: 1;
+  padding: 12px 25px;
+  background: #d32f2f;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.contact-form button:hover {
+  background: #b71c1c;
+  transform: scale(1.05);
+}
+
+.contact-form button[type="button"] {
+  background: #555; 
+}
+
+.contact-form button[type="button"]:hover {
+  background: #777;
+}
