@@ -14,32 +14,55 @@
         <li><a href="#">Masculino</a></li>
         <li><a href="#">Feminino</a></li>
         <li><a href="#">Infantil</a></li>
+        <li><a href="#">Calçados</a></li>
         <li><a href="#">Novidades</a></li>
         <li><a href="#">Promoções</a></li>
       </ul>
     </nav>
-    <div class="icons">
-      <a href="#">🔍</a>
-      <a href="#">👤</a>
-      <a href="#">🛒</a>
-    </div>
+     <div class="icons">
+    <!-- Lupa -->
+    <a href="#" aria-label="Buscar">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="11" cy="11" r="8"/>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+      </svg>
+    </a>
+    <!-- Usuário -->
+    <a href="#" aria-label="Conta">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="7" r="4"/>
+        <path d="M5.5 21a8.38 8.38 0 0 1 13 0"/>
+      </svg>
+    </a>
+    <!-- Carrinho -->
+    <a href="#" aria-label="Carrinho">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="9" cy="21" r="1"/>
+        <circle cx="20" cy="21" r="1"/>
+        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+      </svg>
+    </a>
+  </div>
   </header>
   <!-- Coleções -->
   <section class="collections">
-    <h2>Roupas Masculinas</h2>
+    <h2>Camisetas</h2>
     <div class="grid">
       <div class="card">
-        <img src="https://a-static.mlcdn.com.br/1500x1500/tenis-de-treino-academia-feminino-drop-set-anti-derrapante-conforto-sola-macia-cheia-de-marra/jvclay/8247d5d05d5b11eebc424201ac185056/9a0d773fa5c1e21cc6e9cc26a1af663a.jpeg" alt="Tênis">
-        <h3>Tênis Atividade Física</h3>
+        <img src="https://down-br.img.susercontent.com/file/br-11134207-7r98o-lzhqstrxe9etf3" alt="camisapretabasica">
+        <h3>Camisas Básicas VB</h3>
       </div>
       <div class="card">
-        <img src="https://images.tcdn.com.br/img/img_prod/1331241/camiseta_dry_fit_masculina_azul_91_1_71899bbe1980ff42ae9a22f206f62ef3.jpg" alt="Roupas">
-        <h3>Dry Fit</h3>
+        <img src="https://atoomic.com.br/cdn/shop/files/WhatsAppImage2023-08-28at15.38.12.jpg?v=1756408075" alt="Roupas">
+        <h3>Dry Fit's</h3>
       </div>
       <div class="card">
-        <img src="https://images.tcdn.com.br/img/img_prod/390900/camisa_de_compressao_termica_stigli_pro_protecao_solar_fpu_50_manga_longa_4771_1_20201211122400.jpg" alt="Esporte">
-        <h3>Performance</h3>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVC-i-j2jJp-iBRy-8mYcvkZgD6itVQrC5rQ&s" alt="Esporte">
+        <h3>Camisas de Compressão</h3>
       </div>
+      <div class="product">
+        <img src="https://images.tcdn.com.br/img/img_prod/1252042/camiseta_bold_consuming_fire_preta_estonada_43_2_d74ba8e8090634aa404ef9416063873b.png" alt="Produto 3">
+        <h3>Camisetas Estampadas</h3>
     </div>
   </section>
   <!-- Coleções -->
@@ -60,6 +83,33 @@
       </div>
     </div>
   </section>
-    
+  <!-- Rodapé -->
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="#">Ajuda</a>
+      <a href="#">Sobre Nós</a>
+      <a href="#">Política de Privacidade</a>
+      <a href="#">Contato</a>
+    </div>
+    <p>&copy; 2025 VB Hustle Style. Todos os direitos reservados.</p>
+  </footer>
+  
 </body>
 </html>
+<!-- Formulário de Contato -->
+<section class="contact-form">
+  <h2>Fale Conosco</h2>
+  <form action="#" method="post">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+
+    <label for="mensagem">Mensagem:</label>
+    <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva sua mensagem" required></textarea>
+
+    <button type="submit">Enviar</button>
+    <button type="button" onclick="history.back()">Voltar</button>
+  </form>
+</section>

@@ -2,6 +2,10 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
+  <link
+    rel="icon"
+    href="img/logo.PNG"
+    type="image/x-icon">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>VB Hustle Style</title>
   <link rel="stylesheet" href="styles.css">
@@ -13,23 +17,45 @@
   </div>
 
   <!-- Header -->
-  <header class="header">
-    <div class="logo">VB Hustle Style</div>
-    <nav class="nav">
-      <ul>
-        <li><a href="tiposroupas/masculina.html">Masculino</a></li>
-        <li><a href="tiposroupas/novidades.html">Feminino</a></li>
-        <li><a href="#">Infantil</a></li>
-        <li><a href="#">Novidades</a></li>
-        <li><a href="#">Promoções</a></li>
-      </ul>
-    </nav>
-    <div class="icons">
-      <a href="#">🔍</a>
-      <a href="#">👤</a>
-      <a href="#">🛒</a>
-    </div>
-  </header>
+<header class="header">
+  <span class="logo">VB Hustle Style</span>
+  <nav class="nav">
+    <ul>
+      <li><a href="tiposroupas/masculina.html">Masculino</a></li>
+      <li><a href="#">Feminino</a></li>
+      <li><a href="#">Infantil</a></li>
+      <li><a href="#">Calçados</a></li>
+      <li><a href="#">Novidades</a></li>
+      <li><a href="#">Promoções</a></li>
+    </ul>
+  </nav>
+  <div class="icons">
+    <!-- Lupa -->
+    <a href="#" aria-label="Buscar">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="11" cy="11" r="8"/>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+      </svg>
+    </a>
+    <label for="pesquisa"></label>
+    <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+    <!-- Usuário -->
+    <a href="#" aria-label="Conta">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="7" r="4"/>
+        <path d="M5.5 21a8.38 8.38 0 0 1 13 0"/>
+      </svg>
+    </a>
+    <!-- Carrinho -->
+    <a href="#" aria-label="Carrinho">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="9" cy="21" r="1"/>
+        <circle cx="20" cy="21" r="1"/>
+        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+      </svg>
+    </a>
+  </div>
+</header>
 
   <!-- Hero -->
   <section class="hero">
@@ -99,3 +125,21 @@
   </footer>
 </body>
 </html>
+
+<!-- Formulário de Contato -->
+<section class="contact-form">
+  <h2>Fale Conosco</h2>
+  <form action="#" method="post">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+
+    <label for="mensagem">Mensagem:</label>
+    <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva sua mensagem" required></textarea>
+
+    <button type="submit">Enviar</button>
+    <button type="button" onclick="history.back()">Voltar</button>
+  </form>
+</section>
