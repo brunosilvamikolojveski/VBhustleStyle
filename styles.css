@@ -4,7 +4,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   font-family: "Arial", sans-serif;
   color: #f7f7f7;
@@ -61,13 +60,18 @@ body {
   color: #fff;
   display: inline-flex;
   transition: transform 0.2s ease, color 0.2s ease;
+
 }
 
 .icons a:hover {
   color: #ac860a;
   transform: scale(1.2);
 }
-
+#pesquisar{
+  padding-top: 1vh;
+  text-align: left;
+  
+}
 /* Hero */
 .hero {
   background: url('https://images.unsplash.com/photo-1587280501635-68a0e82cd5ff?fm=jpg&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8c3BvcnQlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww&ixlib=rb-4.1.0&q=60&w=3000') no-repeat center/cover;
@@ -297,4 +301,7 @@ body {
 .contact-form a{
   color: white;
   text-decoration: none;
+}
+html{
+  scroll-behavior: smooth;
 }

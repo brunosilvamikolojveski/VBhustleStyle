@@ -8,6 +8,8 @@ body {
     background-color: #777677;
     height: 60vh;
     margin: 0;
+    background-size: 100%;
+    background-image: url("https://img.freepik.com/free-photo/plain-smooth-green-wall-texture_53876-129746.jpg");
 }
 
 h1 {
@@ -41,4 +43,9 @@ button{
 a{
     color: black;
     text-decoration: none;
+}
+#pesquisar{
+  padding-top: 1vh;
+  text-align: left;
+  
 }
