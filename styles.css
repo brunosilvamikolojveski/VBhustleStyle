@@ -9,6 +9,8 @@ body {
   color: #f7f7f7;
   background: #777677;
   line-height: 1.6;
+ background-size: 100%;
+  background-image: url("https://img.freepik.com/free-photo/plain-smooth-green-wall-texture_53876-129746.jpg");
 }
 
 /* Banner promocional */
