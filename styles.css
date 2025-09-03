@@ -287,3 +287,14 @@ body {
 .contact-form button[type="button"]:hover {
   background: #777;
 }
+#pesquisar{
+  margin-top: 1px;
+  font-size: 15px;
+  width: 150px;
+  color: white;
+  background-color: black;
+}
+.contact-form a{
+  color: white;
+  text-decoration: none;
+}
