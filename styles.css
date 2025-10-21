@@ -70,7 +70,7 @@ body {
   transform: scale(1.2);
 }
 #pesquisar{
-  padding-top: 1vh;
+  padding-top: 0.5vh;
   text-align: left;
   
 }
@@ -306,4 +306,8 @@ body {
 }
 html{
   scroll-behavior: smooth;
+}
+
+input::placeholder{
+  color:white;
 }

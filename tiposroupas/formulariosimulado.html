@@ -9,11 +9,22 @@
 <body>
     <h1>Mensagem enviada com êxito!</h1>
     <div class="formulariosimulado">
-        <p><b>Nome:</b><br>João da silva</p>
-        <p><b>E-mail: </b><br>Joãodasilva@gmail.com</p>
-        <p><b>Mensagem: </b><br>Não recebi o meu pedido!</p>
         </div>
         <button><a href="../index.html">Voltar</a></button>
         
+
+<script>
+    const nome = localStorage.getItem("nome");
+    const email = localStorage.getItem("email");
+    const mensagem = localStorage.getItem("mensagem");
+
+    if (nome && email && mensagem) {
+        document.getElementById("mostrar").innerText =
+        nome+ email + mensagem;
+    } else{
+        document.getElementById("mostrar").innerText = 
+        "nenhum dado encontrado." ;
+    }
+</script>   
 </body>
 </html>
