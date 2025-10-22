@@ -318,7 +318,7 @@ body {
 }
 html{
   scroll-behavior: smooth;
-  scrollbar-color: grey black;
+  scrollbar-color: rgb(48, 48, 48) black;
 }
 
 input::placeholder{
