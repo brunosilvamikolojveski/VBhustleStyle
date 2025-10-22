@@ -68,10 +68,20 @@ body {
 .icons a:hover {
   color: #ac860a;
   transform: scale(1.2);
+
 }
+
 #pesquisar{
   padding-top: 0.5vh;
   text-align: left;
+  width: 100%;
+  padding: 10px 40px 10px 15px;
+  border: 2px solid #444;
+  border-radius: 30px;
+  background-color: #111;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
   
 }
 /* Hero */
