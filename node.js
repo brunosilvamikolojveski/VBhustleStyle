@@ -11,7 +11,7 @@ const form = document.getElementById("Meuform");
     localStorage.setItem("mensagem", mensagem);
 
     window.location.href = "Formulário/formulariosimulado.html";
-
+    window.location.href = "/Formulário/formulariosimulado.html";
   });
 
 
@@ -40,7 +40,21 @@ const form = document.getElementById("Meuform");
   }
   digitar();
   
+window.addEventListener("load", function() {
 
+  const msg = document.createElement("div");
+  msg.classList.add("popup-msg");
+  msg.textContent = "Página carregada com sucesso!";
+
+  document.body.appendChild(msg);
+
+  setTimeout(() => {
+    msg.classList.add("hide");
+    setTimeout(() => msg.remove(), 500);
+  },3000);
+});
+
+document.getElementById("")
 
 
 

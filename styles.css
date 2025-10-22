@@ -332,3 +332,44 @@ input::placeholder{
 #email::placeholder{
   color: grey;
 }
+
+
+
+.popup-msg {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #0c0c0c;
+  color: #f7f7f7;
+  padding: 14px 22px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  font-weight: 500;
+  font-size: 15px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: aparecer 0.4s forwards;
+  z-index: 9999;
+}
+
+@keyframes aparecer {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.popup-msg.hide {
+  animation: desaparecer 0.4s forwards;
+}
+
+@keyframes desaparecer {
+  to {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+#limpar{
+  background-color: lightgrey;
+}

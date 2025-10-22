@@ -15,7 +15,7 @@
         <li><a href="#">Feminino</a></li>
         <li><a href="#">Calçados</a></li>
         <li><a href="#">Novidades</a></li>
-        <li><a href="#">Promoções</a></li>
+        <li><a href="#" onclick="alert('Página em desenvolvimento!')">Promoções</a></li>
       </ul>
     </nav>
      <div class="icons">
@@ -37,7 +37,7 @@
     </a>
     <!-- Carrinho -->
     <a href="#" aria-label="Carrinho">
-      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <circle cx="9" cy="21" r="1"/>
         <circle cx="20" cy="21" r="1"/>
         <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
@@ -110,7 +110,7 @@
   </section>
   </section>
 
-<!-- Formulário de Contato -->
+  <!-- Formulário de Contato -->
 <section class="contact-form">
   <h2>Fale Conosco</h2>
   <form  id="Meuform"  action="" method="post">
@@ -123,11 +123,12 @@
     <label for="mensagem">Mensagem:</label>
     <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva sua mensagem" required></textarea>
 
-      <button type="submit">Enviar</button>
+      <button type="submit">Enviar</button> <button 
+      onmouseover="this.style.backgroundColor = 'grey'"
+      onmouseout="this.style.backgroundColor= 'lightgrey' "
+      id="limpar" type="reset">Limpar</button>
   </form>
 </section>
-</section>
-
 
   <!-- Rodapé -->
   <footer class="footer">
@@ -139,6 +140,8 @@
     </div>
     <p>&copy; 2025 VB Hustle Style. Todos os direitos reservados.</p>
   </footer>
+
+
   <script src="/node.js"></script>
 
 </body>
