@@ -8,9 +8,9 @@ const form = document.getElementById("Meuform");
 
     localStorage.setItem("nome", nome);
     localStorage.setItem("email", email);
-    localStorage.setitem("mensagem", mensagem);
+    localStorage.setItem("mensagem", mensagem);
 
-    window.location.href = "resultado.html";
+    window.location.href = "Formulário/formulariosimulado.html";
 
   });
 

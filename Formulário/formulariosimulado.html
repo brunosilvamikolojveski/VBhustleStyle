@@ -5,26 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
     <link rel="stylesheet" href="formulario.css">
+    <link rel="stylesheet" href="/index.html">
 </head>
 <body>
     <h1>Mensagem enviada com êxito!</h1>
-    <div class="formulariosimulado">
+    <div class="formulariosimulado" id="mostrar">
         </div>
         <button><a href="../index.html">Voltar</a></button>
-        
+
 
 <script>
     const nome = localStorage.getItem("nome");
     const email = localStorage.getItem("email");
     const mensagem = localStorage.getItem("mensagem");
 
-    if (nome && email && mensagem) {
+    const mostrar = document.getElementById("mostrar");
+
+   mostrar.innerHTML = 
+    "<p>Nome: " + nome + "</p>" +
+    "<p>Email: " + email + "</p>" +
+    "<p>Mensagem: " + mensagem + "</p>";
+
+    if (nome && email) {
         document.getElementById("mostrar").innerText =
-        nome+ email + mensagem;
-    } else{
+        "Nome:" <br> + nome + email + mensagem;
+    } else {
         document.getElementById("mostrar").innerText = 
         "nenhum dado encontrado." ;
     }
-</script>   
+
+
+</script>  
 </body>
 </html>
